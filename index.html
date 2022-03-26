@@ -12,16 +12,7 @@
     <title>Document</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Open+Sans:wght@300&display=swap');
-      @font-face {
-        font-family: Brandon Grotesque;
-        src: url('brandon-grotesque-black.otf');
-      }
 
-      @font-face {
-        font-family: Brandon Grotesque;
-        font-weight: bold;
-        src: url('brandon-grotesque-bold-italic.otf');
-      }
       * {
         padding: 0;
         margin: 0;
@@ -44,9 +35,9 @@
         color: rgba(29, 29, 29, 0.7);
       }
       .container {
-        width: 1000px;
+        max-width: 1000px;
+        min-width: 320px;
         margin: 0 auto;
-        min-width: 500px;
       }
       header {
         width: 100%;
@@ -96,7 +87,7 @@
         float: left;
       }
       div.hero-image img {
-        width: 350px;
+        max-width: 350px;
       }
 
       h1 {
@@ -115,7 +106,7 @@
       div.message {
         float: right;
         text-align: center;
-        width: 650px;
+        max-width: 650px;
       }
       div.message h1 {
         white-space: pre-wrap;
@@ -136,6 +127,7 @@
         background: #fff;
         color: #1d1d1d;
       }
+
       footer {
         padding-top: 150px;
       }
